@@ -10,7 +10,7 @@ namespace Task02
 
             bool checkLetter = true;
             List<int> nums = new List<int>();
-            var sum = 0;
+            double sum = 0;
             double total = 0;
             do
             {
@@ -46,7 +46,19 @@ namespace Task02
                 else if (letter == 'A')
                 {
                     int number = Convert.ToInt32(Console.ReadLine());
-                    nums.Add(number);
+                    
+                        if (nums.Contains(number))
+                        {
+                            Console.WriteLine("You already addedd this number before");
+                        }
+                        else
+                        {
+                            nums.Add(number);
+                        Console.WriteLine("Number added suucessfully !!");
+                    }
+                    
+                    
+                   
                 }
                 else if (letter == 'M')
                 {
