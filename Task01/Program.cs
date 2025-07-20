@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            
+
 
             Console.WriteLine("Islam's Carpet Cleaning Service!\n");
             Console.WriteLine("Charges:\n");
@@ -28,14 +28,14 @@
             Console.WriteLine($"Number of large carpets: {numberOfLargeCarpet} \n");
             Console.WriteLine($"Price per small room: {smallCarpetPrice} \n");
             Console.WriteLine($"Price per large room: {largeCarpetPrice} \n");
-            
-            int cost = smallCarpetPrice *numberOfSmallCarpet + largeCarpetPrice * numberOfLargeCarpet;
+
+            int cost = smallCarpetPrice * numberOfSmallCarpet + largeCarpetPrice * numberOfLargeCarpet;
 
             Console.WriteLine($"Cost: {cost} \n");
 
             Console.WriteLine($"Tax: {tax * 100}% \n");
             Console.WriteLine("===============================\n");
-            double totalEstimate = cost * tax + cost ;
+            double totalEstimate = cost * tax + cost;
             Console.WriteLine($"Total estimate: {totalEstimate} \n");
             Console.WriteLine("This estimate is valid for 30 days\n");
 
